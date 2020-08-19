@@ -10,6 +10,7 @@
 		455343A21C27441F0013DD4D /* ZFDragableModalTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 455343A11C27441F0013DD4D /* ZFDragableModalTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		455343AB1C2744850013DD4D /* ZFModalTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 455343A91C2744850013DD4D /* ZFModalTransitionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		455343AC1C2744850013DD4D /* ZFModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 455343AA1C2744850013DD4D /* ZFModalTransitionAnimator.m */; };
+		502C6C5D24ED345C005605A5 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502C6C5C24ED345C005605A5 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		455343A31C27441F0013DD4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		455343A91C2744850013DD4D /* ZFModalTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFModalTransitionAnimator.h; sourceTree = "<group>"; };
 		455343AA1C2744850013DD4D /* ZFModalTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFModalTransitionAnimator.m; sourceTree = "<group>"; };
+		502C6C5C24ED345C005605A5 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +36,7 @@
 		455343941C27441F0013DD4D = {
 			isa = PBXGroup;
 			children = (
+				502C6C5C24ED345C005605A5 /* Package.swift */,
 				455343A01C27441F0013DD4D /* ZFDragableModalTransition */,
 				4553439F1C27441F0013DD4D /* Products */,
 			);
@@ -102,6 +105,7 @@
 				TargetAttributes = {
 					4553439D1C27441F0013DD4D = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -110,6 +114,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 455343941C27441F0013DD4D;
@@ -137,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502C6C5D24ED345C005605A5 /* Package.swift in Sources */,
 				455343AC1C2744850013DD4D /* ZFModalTransitionAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +241,7 @@
 		455343A71C27441F0013DD4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -246,12 +253,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zoonref.id.ZFDragableModalTransition;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		455343A81C27441F0013DD4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -263,6 +273,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zoonref.id.ZFDragableModalTransition;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
